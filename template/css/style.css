@@ -23,7 +23,20 @@ h1{
 }
 
 ul{
-    padding-left:20px;
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+li img{
+    width: 18px;
+    height: 18px;
 }
 
 input{
@@ -70,6 +83,12 @@ input{
     box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
+.success-message img{
+    width:50px;
+    display:block;
+    
+}
+
 .success-message button{
     width:100%;
     padding:15px;
@@ -78,4 +97,12 @@ input{
     background:#242542;
     color:white;
     cursor:pointer;
+}
+
+.success-message button:hover{
+    background:linear-gradient(
+        90deg,
+        rgba(255,15,123,1) 0%,
+        rgba(248,155,41,1) 100%
+    );
 }
